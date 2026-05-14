@@ -1,22 +1,69 @@
 /* ============================================
-   CORRENTE — Custom CSS
-   Tema: minimale, bianco, tipografico
+   CORRENTE — Custom CSS + Dark Mode
+   Tema: minimale, tipografico, light/dark
    ============================================ */
 
 /* === FONT === */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
+/* === VARIABILI LIGHT (default) === */
+:root {
+  --bg:           #ffffff;
+  --text:         #2d2d2d;
+  --text-heading: #1a1a1a;
+  --text-muted:   #888888;
+  --link:         #606060;
+  --link-hover:   #000000;
+  --border:       #f0f0f0;
+  --blockquote:   #e0e0e0;
+  --quote-text:   #666666;
+  --btn-bg:       #ffffff;
+  --btn-border:   #d0d0d0;
+  --btn-hover-bg: #1a1a1a;
+  --btn-hover-text: #ffffff;
+  --navbar-bg:    #ffffff;
+  --navbar-text:  #404040;
+  --scrollbar-track: #ffffff;
+  --scrollbar-thumb: #d0d0d0;
+  --code-bg:      #f5f5f5;
+}
+
+/* === VARIABILI DARK === */
+[data-theme="dark"] {
+  --bg:           #111111;
+  --text:         #d0d0d0;
+  --text-heading: #e8e8e8;
+  --text-muted:   #777777;
+  --link:         #999999;
+  --link-hover:   #ffffff;
+  --border:       #222222;
+  --blockquote:   #333333;
+  --quote-text:   #999999;
+  --btn-bg:       #1a1a1a;
+  --btn-border:   #333333;
+  --btn-hover-bg: #ffffff;
+  --btn-hover-text: #111111;
+  --navbar-bg:    #111111;
+  --navbar-text:  #b0b0b0;
+  --scrollbar-track: #111111;
+  --scrollbar-thumb: #333333;
+  --code-bg:      #1a1a1a;
+}
+
+/* === BASE === */
 body {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 18px;
   line-height: 1.75;
-  color: #2d2d2d;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* === TITOLI === */
 h1, h2, h3, h4 {
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--text-heading);
   letter-spacing: -0.02em;
 }
 
@@ -26,15 +73,15 @@ h3 { font-size: 1.25rem; }
 
 /* === LINK === */
 a {
-  color: #606060;
+  color: var(--link);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 a:hover {
-  color: #000000;
-  border-bottom-color: #000000;
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
 }
 
 /* === NAVBAR === */
@@ -42,18 +89,26 @@ a:hover {
   font-size: 0.9rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  border-bottom: 1px solid #f0f0f0 !important;
+  background-color: var(--navbar-bg) !important;
+  border-bottom: 1px solid var(--border) !important;
   box-shadow: none !important;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-brand {
   font-weight: 700;
   letter-spacing: 0.05em;
+  color: var(--text-heading) !important;
 }
 
-/* === POST LIST (homepage) === */
+.navbar-nav .nav-link,
+.navbar-default .navbar-nav > li > a {
+  color: var(--navbar-text) !important;
+}
+
+/* === POST LIST === */
 .post-preview {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--border);
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -61,11 +116,12 @@ a:hover {
 .post-title {
   font-weight: 600;
   font-size: 1.4rem;
+  color: var(--text-heading);
 }
 
 .post-subtitle,
 .post-meta {
-  color: #888888;
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
@@ -80,24 +136,32 @@ article p {
 }
 
 blockquote {
-  border-left: 3px solid #e0e0e0;
+  border-left: 3px solid var(--blockquote);
   padding-left: 1.2rem;
-  color: #666666;
+  color: var(--quote-text);
   font-style: italic;
   margin: 1.5rem 0;
 }
 
-/* === FOOTER === */
-.footer {
-  border-top: 1px solid #f0f0f0;
-  font-size: 0.85rem;
+code, pre {
+  background-color: var(--code-bg);
+  transition: background-color 0.3s ease;
 }
 
-/* === BOTTONI / PAGINAZIONE === */
+/* === FOOTER === */
+.footer {
+  background-color: var(--bg) !important;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: background-color 0.3s ease;
+}
+
+/* === BOTTONI === */
 .btn-default {
-  background-color: #ffffff;
-  color: #2d2d2d;
-  border: 1px solid #d0d0d0;
+  background-color: var(--btn-bg);
+  color: var(--text);
+  border: 1px solid var(--btn-border);
   border-radius: 2px;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -106,17 +170,43 @@ blockquote {
 }
 
 .btn-default:hover {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  border-color: #1a1a1a;
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-bg);
 }
 
-/* === SPAZIATURA GENERALE === */
+/* === SPAZIATURA === */
 .container {
   max-width: 800px;
 }
 
-/* === SCROLLBAR MINIMALE (webkit) === */
+/* === SCROLLBAR === */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #ffffff; }
-::-webkit-scrollbar-thumb { background: #d0d0d0; border-radius: 3px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+
+/* ============================================
+   DARK MODE TOGGLE — bottone
+   ============================================ */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: var(--navbar-text);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle:hover {
+  color: var(--link-hover);
+}
+
+/* Icone: mostra solo quella giusta */
+.theme-toggle .icon-sun  { display: none; }
+.theme-toggle .icon-moon { display: inline; }
+
+[data-theme="dark"] .theme-toggle .icon-sun  { display: inline; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
