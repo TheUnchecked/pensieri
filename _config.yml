@@ -1,3 +1,7 @@
+# URL — OBBLIGATORI per un project site
+url: "https://theunchecked.github.io"
+baseurl: "/pensieri"
+
 # Informazioni principali
 title: Corrente
 description: Pensieri in movimento continuo.
@@ -27,10 +31,6 @@ page-col: "#ffffff"
 text-col: "#2d2d2d"
 link-col: "#606060"
 hover-col: "#000000"
-
-# Font — minimale e leggibile
-font: "Source Sans Pro"
-font-size: "18px"
 
 # Immagine di copertina homepage (opzionale)
 # avatar: "/assets/img/foto.jpg"
