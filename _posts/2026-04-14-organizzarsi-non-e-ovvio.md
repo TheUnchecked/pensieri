@@ -3,9 +3,6 @@ layout: post
 title: "Organizzarsi non è ovvio."
 subtitle: "E i numeri lo dimostrano."
 tags: [produttività, lavoro, organizzazione]
-cover-img: "/assets/img/org.png"
-share-img: "/assets/img/org.png"
-thumbnail-img: "/assets/img/org.png"
 ---
 
 Ho sempre cercato di organizzare il mio lavoro. Di darmi delle priorità, di rispettarle, di non lasciare che l'urgente cannibalizzasse l'importante.
@@ -64,14 +61,3 @@ E chi non lo ha ancora capito, lo vedi dai numeri che produce ogni giorno senza 
 
 **Non ero io quello fuori posto.**
 **Era il sistema intorno a me.**
-
----
-
-## Fonti
-
-- **121 mail al giorno** — [cloudHQ, Workplace Email Statistics 2025](https://blog.cloudhq.net/workplace-email-statistics/)
-- **28% della settimana lavorativa dedicata alle mail** — [McKinsey Global Institute](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy)
-- **275 interruzioni al giorno** — [Microsoft, Work Trend Index 2025](https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born)
-- **23 minuti per recuperare la concentrazione** — Gloria Mark, University of California Irvine — ricerca su interruzioni e lavoro, citata in [Fast Company](https://www.fastcompany.com/91322048/workers-are-interrupted-up-to-275-times-a-day)
-- **60% del tempo in "work about work"** — [Asana, Anatomy of Work Index](https://asana.com/resources/why-work-about-work-is-bad)
-- **62% del tempo in task ripetitivi** — [Clockify, Time Spent on Recurring Tasks](https://clockify.me/time-spent-on-recurring-tasks)
