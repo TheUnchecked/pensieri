@@ -299,3 +299,38 @@ code, pre {
   position: relative;
   z-index: 2;
 }
+/* === STAT CARDS === */
+.stat-row {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 160px;
+  max-width: 280px;
+  background: #1a1a1a;
+  border-top: 3px solid #c8e64a;
+  border-radius: 4px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.stat-card .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c8e64a;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999999;
+  line-height: 1.4;
+}
