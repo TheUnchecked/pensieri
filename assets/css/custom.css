@@ -1,5 +1,5 @@
 /* ============================================
-   CORRENTE — Custom CSS + Dark Mode
+   TEMPA — Custom CSS + Dark Mode
    Tema: minimale, tipografico, light/dark
    ============================================ */
 
@@ -186,7 +186,7 @@ code, pre {
 ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
 
 /* ============================================
-   DARK MODE TOGGLE — bottone
+   DARK MODE TOGGLE
    ============================================ */
 .theme-toggle {
   background: none;
@@ -204,7 +204,6 @@ code, pre {
   color: var(--link-hover);
 }
 
-/* Icone: mostra solo quella giusta */
 .theme-toggle .icon-sun  { display: none; }
 .theme-toggle .icon-moon { display: inline; }
 
@@ -212,7 +211,7 @@ code, pre {
 [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ============================================
-   1. BURGER SEMPRE VISIBILE (anche desktop)
+   BURGER SEMPRE VISIBILE (anche desktop)
    ============================================ */
 .navbar-expand-xl .navbar-toggler {
   display: flex !important;
@@ -231,25 +230,20 @@ code, pre {
 }
 
 /* ============================================
-   2. DARK MODE — burger e navbar bianchi
+   DARK MODE — burger e navbar bianchi
    ============================================ */
-
-/* Icona burger bianca */
 [data-theme="dark"] .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-/* Bordo burger */
 [data-theme="dark"] .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
-/* Brand (titolo) bianco */
 [data-theme="dark"] .navbar-brand {
   color: #e8e8e8 !important;
 }
 
-/* Link navbar bianchi */
 [data-theme="dark"] .navbar-nav .nav-link,
 [data-theme="dark"] .navbar-default .navbar-nav > li > a {
   color: #d0d0d0 !important;
@@ -259,7 +253,6 @@ code, pre {
   color: #ffffff !important;
 }
 
-/* Dropdown dark */
 [data-theme="dark"] .dropdown-menu {
   background-color: #1a1a1a;
   border-color: #333333;
@@ -273,7 +266,10 @@ code, pre {
   background-color: #222222;
   color: #ffffff;
 }
-/* === COVER IMAGE — overlay scuro per leggibilità === */
+
+/* ============================================
+   COVER IMAGE — overlay scuro
+   ============================================ */
 .intro-header .big-img .img-desc {
   background: transparent !important;
 }
@@ -299,7 +295,10 @@ code, pre {
   position: relative;
   z-index: 2;
 }
-/* === STAT CARDS === */
+
+/* ============================================
+   STAT CARDS
+   ============================================ */
 .stat-row {
   display: flex;
   gap: 1rem;
