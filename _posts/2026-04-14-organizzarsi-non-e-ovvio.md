@@ -3,6 +3,9 @@ layout: post
 title: "Organizzarsi non è ovvio."
 subtitle: "E i numeri lo dimostrano."
 tags: [produttività, lavoro, organizzazione]
+cover-img: "/assets/img/org.png"
+share-img: "/assets/img/org.png"
+thumbnail-img: "/assets/img/org.png"
 ---
 
 Ho sempre cercato di organizzare il mio lavoro. Di darmi delle priorità, di rispettarle, di non lasciare che l'urgente cannibalizzasse l'importante.
