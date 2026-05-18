@@ -1,26 +1,33 @@
 ---
 layout: post
-title: "Tua madre ha quasi perso i risparmi."
-subtitle: "La colpa non è solo dei truffatori."
+title: "Caro genitore, nonno amico, NON aprire le mail!"
+subtitle: "Dietro ogni email si può nascondere una truffa"
 tags: [sicurezza digitale, truffe, phishing, società]
 # cover-img: "/assets/img/.jpg"
 # share-img: "/assets/img/.jpg"
 # thumbnail-img: "/assets/img/.jpg"
 ---
 
-Una mail. Il logo di Poste Italiane. Un messaggio che diceva che il suo conto era bloccato. Un link. Le sue credenziali inserite.
+Un mail truffa ha sempre un travestimento che la fa sembrare quella di una banca, la tua, delle poste o dell'Agenzia delle Entrate.
 
-Per fortuna qualcuno l'ha fermata in tempo.
+Non devi fidarti a prescindere, e qui proverò a spiegarti in modo semplice come capire subito se una mail è legittima o meno.
+
+#Ma la REGOLA N° è DI non aprire mai una mail sospetta da smartphone, MAI!!!!
 
 ---
 
-## I truffatori hanno colpe reali. Partiamo da qui.
+Le truffe via email non sono il lavoro solitario di qualche hacker in cantina. Sono industrie organizzate, scalabili e redditizie.
 
-Le truffe via email non sono il lavoro solitario di qualche hacker in cantina. Sono industrie. Organizzate, scalabili, redditizie.
+Comprano banche dati di indirizzi email. Noleggiano server in paesi dove nessuno li raggiunge. Copiano loghi, colori e layout delle aziende più grandi. Usano sistemi automatici per mandare #milioni di messaggi al giorno.
 
-Comprano banche dati di indirizzi email. Noleggiano server in paesi dove nessuno li raggiunge. Copiano loghi, colori e layout delle aziende più grandi. Usano sistemi automatici per mandare milioni di messaggi al giorno.
 
-La mail che fingeva di essere DHL — una che ho analizzato di recente — aveva queste caratteristiche:
+Prendo uan delle tante mail ricevute nella mia casella di posta, quella in cui fingeva di essere DHL, #ATTENZIONE ti sto facendo vedere una mail facile, ma RICORDA che i truffatori sanno quando ti deve arrivare un pacco e potrebbe coincidere e quindi farti cadere nella trappola.
+
+P.S.: Ci sono altri metodi per capire se una mail è vera o meno, ma devo dire che mi fido più del semplice controllo manuale.
+
+
+
+L'esempio è condotto sul cliente più utilizzato GMAIL
 
 ```
 From:        "DHL" (nome copiato, indirizzo falso)
